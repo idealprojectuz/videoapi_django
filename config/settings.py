@@ -33,7 +33,8 @@ DEBUG = False
 ALLOWED_HOSTS = [
     'idealproject.uz',
     '0.0.0.0',
-    'videos.idealproject.uz'
+    'videos.idealproject.uz',
+    '176.57.215.135'
 ]
 
 
