@@ -28,9 +28,13 @@ MEDIA_URL = '/media/'
 SECRET_KEY = 'django-insecure-im7f4bxt-zia&6g81a68^)$bm2dy8kt=k=jwq^heo*mf7x&eo&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'idealproject.uz',
+    '0.0.0.0',
+    'videos.idealproject.uz'
+]
 
 
 # Application definition
