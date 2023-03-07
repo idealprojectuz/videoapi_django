@@ -29,6 +29,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     path('api/', include('videos.urls')),
+    path('api/v2/category', include('categories.urls')),
     # path('api/v1/auth/', include('dj_rest_auth.urls')),
     # path('api/v1/auth/registration/', include('dj_rest_auth.registration.urls')),
     # path('api/v1/allauth/', include('allauth.urls')),

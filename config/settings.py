@@ -28,13 +28,16 @@ MEDIA_URL = '/media/'
 SECRET_KEY = 'django-insecure-im7f4bxt-zia&6g81a68^)$bm2dy8kt=k=jwq^heo*mf7x&eo&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     'idealproject.uz',
     '0.0.0.0',
     'videos.idealproject.uz',
-    '176.57.215.135'
+    '176.57.215.135',
+    '127.0.0.1',
+    'localhost',
+    '10.10.3.85'
 ]
 
 
@@ -58,7 +61,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework_simplejwt',
     # localapps
-    # 'todos.apps.TodosConfig',
+    'todos.apps.TodosConfig',
     'categories.apps.CategoriesConfig',
     'videos.apps.VideosConfig'
 
@@ -103,6 +106,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:3000',
     'http://localhost:8000',
+
 
 )
 SITE_ID = 1
