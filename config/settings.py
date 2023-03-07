@@ -60,7 +60,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework_simplejwt',
     # localapps
-    'todos.apps.TodosConfig',
+    # 'todos.apps.TodosConfig',
     'categories.apps.CategoriesConfig',
     'videos.apps.VideosConfig'
 
