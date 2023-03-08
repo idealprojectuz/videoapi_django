@@ -14,6 +14,7 @@ from pathlib import Path
 from datetime import timedelta
 import os
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -33,7 +34,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'idealproject.uz',
     '0.0.0.0',
-    'videos.idealproject.uz',
+    'video.idealproject.uz',
     '176.57.215.135',
     '127.0.0.1',
     'localhost',
@@ -111,15 +112,15 @@ CORS_ORIGIN_WHITELIST = (
 
 
 )
-SITE_ID = 1
-REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.AllowAny'
-    ],
-    "DEFAULT_AUTHENTIFICATION_CLASSES": [
-        'rest_framework_simplejwt.authentication.JWTAuthentication',
-    ]
-}
+# SITE_ID = 1
+# REST_FRAMEWORK = {
+#     'DEFAULT_PERMISSION_CLASSES': [
+#         'rest_framework.permissions.IsAuthenticatedOrReadOnly '
+#     ],
+# "DEFAULT_AUTHENTIFICATION_CLASSES": [
+#     'rest_framework_simplejwt.authentication.JWTAuthentication',
+# ]
+# }
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

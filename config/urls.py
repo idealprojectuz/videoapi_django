@@ -30,6 +30,7 @@ urlpatterns = [
 
     path('api/', include('videos.urls')),
     path('api/v2/category', include('categories.urls')),
+    path('api-auth/', include('rest_framework.urls')),
     # path('api/v1/auth/', include('dj_rest_auth.urls')),
     # path('api/v1/auth/registration/', include('dj_rest_auth.registration.urls')),
     # path('api/v1/allauth/', include('allauth.urls')),
